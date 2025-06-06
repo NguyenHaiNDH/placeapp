@@ -1,5 +1,6 @@
 package com.exam.placebackend.controller;
 
+
 import com.exam.placebackend.model.Place;
 import com.exam.placebackend.service.PlaceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +15,10 @@ import java.util.List;
 public class PlaceController {
 
     @Autowired
-    private PlaceService service;
+    private PlaceService placeService;
 
-    @GetMapping("/getAllPlace")
-    public List<Place> getAllPlaces() {
-        return service.getAllPlaces();
+    @GetMapping("/all")
+    public List<Place> getAllPlace() {
+        return placeService.getAllPlaces();
     }
 }

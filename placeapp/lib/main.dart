@@ -1,3 +1,4 @@
+// lib/main.dart
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
 
@@ -7,11 +8,14 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Place App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: 'Travel App',
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+      ),
       home: const HomePage(),
     );
   }
